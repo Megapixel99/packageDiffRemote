@@ -23,7 +23,7 @@ npm i packagediffremote
 
 An example usage of the API can be seen below:
 ```javascript
-const packageDiffRemote = require('packageDiffRemote');
+const packageDiffRemote = require('packagediffremote');
 
 packageDiffRemote().then(function (data) {
   console.log(data);
@@ -32,6 +32,21 @@ packageDiffRemote().then(function (data) {
 })
 
 ```
+The method packagediffremote can take three optional parameters (in the order shown below):
+
+`folder - string - specify a folder to check (defaults to node_modules)`
+
+`package - string - specify a package to check (defaults to all packages in the folder)`
+
+`verbose - boolean - output additional logs`
+
+```javascript
+const packageDiffRemote = require('packagediffremote');
+
+packageDiffRemote(folder, package, verbose)
+
+```
+
 The output of data (from the code sample above) will be structured as follows:
 ```json
 [
