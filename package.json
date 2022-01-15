@@ -1,0 +1,15 @@
+{
+  "name": "packageDiffRemote",
+  "version": "1.0.0",
+  "description": "show diff of packages from their repositories",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seth Wheeler",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "diff": "^5.0.0"
+  }
+}
