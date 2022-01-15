@@ -8,6 +8,10 @@
   },
   "author": "Seth Wheeler",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Megapixel99/packageDiffRemote"
+  },
   "dependencies": {
     "axios": "^0.24.0",
     "diff": "^5.0.0"
