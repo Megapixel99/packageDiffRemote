@@ -1,5 +1,8 @@
 # packageDiffRemote
 
+[![npm version](https://img.shields.io/npm/v/packagediffremote.svg?style=flat-square)](https://www.npmjs.org/package/packagediffremote)
+[![npm downloads](https://img.shields.io/npm/dm/packagediffremote.svg?style=flat-square)](http://npm-stat.com/charts.html?package=packagediffremote)
+
 The purpose of this package is to show the differences between the code in NPM modules/packages which is often downloaded from NPM and the code for NPM modules/packages (which is often hosted on GitHub). This module was inspired by this article: https://therecord.media/malware-found-in-coa-and-rc-two-npm-packages-with-23m-weekly-downloads/ where malware was found in two popular NPM modules/packages.
 
 ### CLI
