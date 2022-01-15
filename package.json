@@ -1,6 +1,6 @@
 {
   "name": "packagediffremote",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "show diff of packages from their repositories",
   "main": "api.js",
   "scripts": {
