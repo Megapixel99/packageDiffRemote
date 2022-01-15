@@ -1,5 +1,5 @@
 {
-  "name": "packageDiffRemote",
+  "name": "packagediffremote",
   "version": "1.0.0",
   "description": "show diff of packages from their repositories",
   "main": "api.js",
