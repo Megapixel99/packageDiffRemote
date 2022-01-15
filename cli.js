@@ -7,7 +7,7 @@ const args = process.argv.splice(1);
 const folder = (args.includes('-f') || args.includes('--folder'))
   ? ((args[args.indexOf('-f')] && args[args.indexOf('-f') + 1]) || (args[args.indexOf('--folder')] && args[args.indexOf('--folder') + 1])) : 'node_modules';
 let packages = (args.includes('--package') ? [args[args.indexOf('--package') + 1]] : null) || (args.includes('-p') ? [args[args.indexOf('-p') + 1]] : []);
-const verbose = (args.includes('--verbose') ? [args[args.indexOf('--verbose') + 1]] : null) || (args.includes('-v') ? [args[args.indexOf('-v') + 1]] : []);
+const verbose = (args.includes('--verbose') || args.includes('-v'));
 const help = (args.includes('-h') || args.includes('--help'));
 const folderPath = path.resolve(`${__dirname}/${folder}`);
 
@@ -30,7 +30,7 @@ if (!fs.existsSync(folderPath)) {
   process.exit(0);
 }
 
-check(packages, folder).then((files) => {
+check(packages, folder, verbose).then((files) => {
   files.forEach((i) => {
     console.log(`\x1b[0m${'Difference detected in file:'} ${i.file}`);
     console.log(`\x1b[32m${'Added'}\x1b[89m \x1b[91m${'Removed'}\x1b[39m \x1b[0m`);
