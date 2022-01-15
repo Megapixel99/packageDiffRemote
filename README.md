@@ -13,7 +13,15 @@ All of the executables were built using Node v12.16.3 and used the `pkg` module/
 
 ### API
 
-This package also exposes an API which can be used in other projects. An example usage of the API can be seen below:
+This package also exposes an API which can be used in other projects.
+
+To use the API please run the following command:
+
+```shell
+npm i packagediffremote
+```
+
+An example usage of the API can be seen below:
 ```javascript
 const packageDiffRemote = require('packageDiffRemote');
 
